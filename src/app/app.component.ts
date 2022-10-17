@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'like';
+
+  post = {
+    isFavorite : false
+  }
+
+  onClick(output : any)
+  {
+    console.log("output decorator works : ", output );
+  }
 }

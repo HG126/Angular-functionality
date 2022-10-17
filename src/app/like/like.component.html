@@ -1,0 +1,16 @@
+<p>like works!</p>
+<span class="fa"
+[ngClass]="{
+    'fa-thumbs-o-up' : !effect,
+    'fa-thumbs-up' : effect
+}"
+
+(click)= "buttonEffect()"
+aria-hidden="true" style="cursor:pointer ;"
+>
+    <!-- <i class="fa fa-thumbs-o-up" (click)= "buttonEffect()" *ngIf ="!effect" aria-hidden="true" style="cursor:pointer ;">{{i}}</i> -->
+    <!-- <i class="fa fa-thumbs-up" (click)= "buttonEffect()" *ngIf ="effect" aria-hidden="true" style="cursor:pointer ;">{{i}}</i><br> -->
+    {{i}} <br>
+    {{title | hero : 20}} <br>
+    {{title | lowercase }}
+</span>
